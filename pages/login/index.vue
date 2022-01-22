@@ -56,7 +56,7 @@ export default {
             }
             if(this.isAuth){
                 this.$router.push({
-                    path: "users"
+                    name: "users"
                 })
             }
         },
@@ -70,7 +70,7 @@ export default {
     mounted(){
         if(this.isAuth){
             this.$router.push({
-                path: "users"
+                name: "users"
             })
         }
     },
