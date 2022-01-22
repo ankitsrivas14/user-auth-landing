@@ -1,0 +1,18 @@
+<template>
+    <Nuxt />
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+
+<style lang="scss">
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+</style>
