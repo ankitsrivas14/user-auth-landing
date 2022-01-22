@@ -10,7 +10,7 @@ export default {
     commit(Types.SET_BUSY, true);
     try{
         console.log("payload", payload);
-        const response = await axios.post("http://localhost:3001/login",payload);
+        const response = await axios.post("https://inisev-backend.herokuapp.com/login",payload);
         commit(Types.SET_AUTH, true);
         return response.status;
     }
