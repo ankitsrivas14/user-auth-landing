@@ -132,10 +132,10 @@ export default {
                     cursor: pointer;
                 }
                 .items-container{
-                    padding-left: 48px;
+                    padding-left: 22px;
                     padding-top: 36px;
                     .list-items{
-                        font-size: 22px;
+                        font-size: 19px;
                         font-weight: 500;
                         margin-bottom: 12px;
                     }
