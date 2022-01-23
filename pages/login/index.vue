@@ -54,11 +54,6 @@ export default {
                 this.showError();
                 return;
             }
-            if(this.isAuth){
-                this.$router.push({
-                    name: "users"
-                })
-            }
         },
         showError(){
             this.isInvalidCred = true;
@@ -68,11 +63,6 @@ export default {
         },
     },
     mounted(){
-        if(this.isAuth){
-            this.$router.push({
-                name: "users"
-            })
-        }
     },
 }
 </script>
