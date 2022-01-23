@@ -20,6 +20,14 @@ export default {
     ]
   },
 
+  // Middleware
+  middleware: ['index'],
+
+  router: {
+    // base: process.env.NUXT_ENV_BASE_URL,
+    middleware: 'index',
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -37,8 +45,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
     '@nuxtjs/style-resources',
   ],
+
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -7,4 +7,7 @@ export default {
   [Types.SET_AUTH]: (state, val) => {
     state.isAuth = val;
   },
+  [Types.SET_TOKEN]: (state, val) => {
+    state.token = val;
+  },
 };
