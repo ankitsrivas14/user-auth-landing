@@ -48,7 +48,6 @@ export default {
                 password: this.password
             }
             const res = await this.BEGIN_AUTH(payload);
-            console.log("res", res);
             if(!res){
                 this.showError();
                 return;

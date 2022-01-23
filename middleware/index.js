@@ -9,6 +9,13 @@ export default async function (context) {
     token = getCookie({ name: context.env.NUXT_ENV_LS_NAME_TOKEN });
   }
 
+  // if(context.route.path !== '/login' || !token) {
+  //   context.redirect(302, '/login')
+  // }
+  if(!token) {
+    context.redirect(302, '/login')
+  }
+
   try {
     const response = await context.$axios.post("https://inisev-backend.herokuapp.com/check-token", {token});
 
@@ -23,10 +30,7 @@ export default async function (context) {
     }
 
   } catch (error) {
-    if(context.route.path !== '/login') {
-      context.redirect(302, '/login')
-    }
-
+    console.log(error);
   }
 
   return
