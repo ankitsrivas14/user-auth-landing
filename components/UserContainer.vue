@@ -13,11 +13,13 @@
                     @show-info-modal="showInfoModal(user)"
                 />
             </div>
-            <UserModal 
-                v-if="showModal"
-                :user="selectedUser"
-                @close-modal="handleCloseModal"
-            />
+            <transition name="inis-fade" appear>
+                <UserModal 
+                    v-if="showModal"
+                    :user="selectedUser"
+                    @close-modal="handleCloseModal"
+                />
+            </transition>
         </div>
     </div>
 </template>
@@ -100,6 +102,19 @@ export default {
             justify-content: center;
             gap: 32px;
         }
+    }
+}
+.inis-fade{
+    &-enter-active, &-leave-active {
+        transition: opacity .2s ease;
+    }
+
+    &-enter, &-leave-to{
+        opacity: 0;
+    }
+
+    &-enter-to, &-leave {
+        opacity: 1;
     }
 }
 </style>
