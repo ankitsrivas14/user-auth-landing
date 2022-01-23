@@ -22,9 +22,9 @@ export default async function (context) {
     }
 
   } catch (error) {
-    // if(context.route.path !== '/login') {
+    if(context.route.path !== '/login') {
       context.redirect(302, '/login')
-    // }
+    }
   }
 
   return
