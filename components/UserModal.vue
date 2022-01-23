@@ -70,6 +70,51 @@ export default {
         top: 50%;
         left: 50%;
         transform: translate(-30%, -50%);
+        min-width: 580px;
+        @media screen and (max-width: 1020px) {
+            transform: translate(-30%, -30%);
+        }
+        @media screen and (max-width: 850px) {
+            transform: translate(-50%, -30%);
+        }
+        @media screen and (max-width: 650px) {
+            min-width: initial;
+            width: 80%;
+            height: 282px;
+            .items-container{
+                padding: 0 !important;
+                padding-top: 30px !important;
+                .list-items{
+                    font-size: 18px !important;
+                }
+            }
+            .inis-modal__modal-inner{
+                img{
+                    width: 250px !important;
+                    height: 282px !important;
+                }
+            }
+        }
+        @media screen and (max-width: 550px) {
+            width: 90%;
+            height: 70%;
+            transform: translate(-50%, -40%);
+            .inis-modal__modal-inner{
+                flex-direction: column;
+                img{
+                    width: 280px !important;
+                    height: 330px !important;
+                    margin: 15px auto 0;
+                }
+                .header-close{
+                    display: none !important;
+                }
+                .items-container{
+                    padding-top: 0 !important;
+                    text-align: center;
+                }
+            }
+        }
         .inis-modal__modal-inner{
             width: 100%;
             display: flex;

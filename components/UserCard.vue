@@ -51,6 +51,10 @@ export default {
     border-radius: 8px;
     position: relative;
     cursor: pointer;
+    @media screen and (max-width: 920px) {
+        width: 230px;
+        height: 350px;
+    }
     img{
         width: 100%;
         height: 100%;

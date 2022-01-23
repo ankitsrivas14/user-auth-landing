@@ -30,5 +30,14 @@ export default {
         justify-content: center;
         cursor: pointer;
     }
+    @media screen and (max-width: 850px) {
+        margin-left: 40px;
+        flex-direction: row;
+        margin-top: 12px;
+        .inis-menu__item{
+            border: none;
+            margin-bottom: 0 !important;
+        }
+    }
 }
 </style>

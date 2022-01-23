@@ -90,6 +90,9 @@ export default {
         flex-direction: column;
         width: 350px;
         margin: 0 auto;
+        @media screen and (max-width: 400px) {
+            width: 250px;
+        }
         .inis-login__title{
             font-weight: 500;
             margin-bottom: 35px;

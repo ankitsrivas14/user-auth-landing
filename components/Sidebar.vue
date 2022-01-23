@@ -39,6 +39,27 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 920px) {
+        width: 180px;
+    }
+    @media screen and (max-width: 850px) {
+        flex-direction: row;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        z-index: 2;
+        .inis-sidebar__upper{
+            display: flex;
+            width: 100%;
+        }
+        .inis-sidebar__lower{
+            width: 150px;
+            height: max-content;
+        }
+        .inis-sidebar__logo-image{
+            margin-bottom: 0 !important;
+        }
+    }
     .inis-sidebar__logo-image{
         width: 100px;
         margin-bottom: 30px;
